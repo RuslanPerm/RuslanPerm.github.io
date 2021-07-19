@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="img/png" sizes="32x32" href="img/ava.jpg">
+	<link rel="icon" type="img/png" sizes="16x16" href="img/ava.jpg">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NWF SHOP</title>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navhead">
+		<div class="container-fluid">
+
+		    <h3><a class="navbar-brand" href="#">NWF SHOP</a></h3>
+
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+			        <li class="nav-item">
+			        	<a class="nav-link" onclick="slowScroll('#carouselCaptions')">Обо мне</a>
+			        </li>
+
+			        <li class="nav-item">
+						<a class="nav-link" onclick="slowScroll_coder('#coder')">Программист</a>
+			        </li>
+
+			        <li class="nav-item">
+						<a class="nav-link" onclick="slowScroll('#designer')">Дизайнер</a>
+			        </li>
+
+			        <li class="nav-item">
+						<a class="nav-link" onclick="slowScroll('#sound')">Звукоинженер, муз. продюсер</a>
+			        </li>
+
+			        <li class="nav-item">
+						<a class="nav-link" onclick="slowScroll('#video')">Видеомонтажёр</a>
+			        </li>
+
+			        <li class="nav-item">
+			        	<a class="nav-link" onclick="slowScroll('#contacts')">Контакты</a>
+			        </li>
+
+		        </ul>
+
+		        <form class="d-flex">
+					<button class="btn btn-outline-success" type="button" style="background-color: green;"><a class="nav-link p-0" style="color: white;" href="https://vk.com/nwfshop" target="_blank">Связаться со мной</a></button>
+		  	    </form>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  		</div>
+
+		  	<div class="carousel-inner">
+
+		    	<div class="carousel-item active" data-bs-interval="5000">
+					
+					<img src="img\me.jpg" class="d-block w-100" alt="img\me.png">
+
+		    	</div>
+
+			    <div class="carousel-item" data-bs-interval="5000">
+
+			    	<img src="img\prjct.jpg" class="d-block w-100" alt="img\prjct.png">
+
+			    </div>
+
+				<div class="carousel-item" data-bs-interval="5000">
+					
+					<img src="img\skills.jpg" class="d-block w-100" alt="img\skills.png">
+
+				</div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"  data-bs-slide="prev">
+	    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    		<span class="visually-hidden">Предыдущий</span>
+			</button>
+
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"  data-bs-slide="next">
+	    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    		<span class="visually-hidden">Следующий</span>
+			</button>
+		</div>
+		
+		<hr id="big_hr">
+
+		<div class="container-fluid">
+			<div class="row" id="head">
+				<div class="col m-5 p-5" id="coder">
+					<h1 id="header_coder" class="col navbar-brand text-center">Программист</h1>
+					<p id="p_r" class="col text-center">Занимаюсь разработкой сайтов, программных обеспечений, десктопных приложений и ботов</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Более 3-х лет вовлечён в это дело и постоянно развиваюсь</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Окончил класс с программой обучения от "Яндекс.Лицей"</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Владею фундаментальными алгоритмами информатики</p>
+				</div>
+			</div>
+
+			<h1 id="header_projects" class="col navbar-brand text-center">Мои проекты</h1>
+
+			<div class="row container-fluid" id="blocks_net">
+				
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Модель сети супермаркетов</h3>
+					<p class="text-center">Программа, моделирующая систему товарооборота в супермаркетах</p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<h3 class="text-center">Сайт S.P.I.D.</h3>
+					<p class="text-center">Сайт по заказу Т.О. S.P.I.D.</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">"Домашний Кинотеатр"</h3>
+					<p class="text-center">Программа, моделирующая расположение акустической системы</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Бот-фристайлер</h3>
+					<p class="text-center">ВК бот, отвечающий рифмой на сообщения</p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<h3 class="text-center">Бот-метеоролог</h3>
+					<p class="text-center">ВК и Discord бот, подсказывающий погоду</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Бот-шифровальщик</h3>
+					<p class="text-center">Бот, кодирующий сообщения по моему принципу</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row" id="head">
+				<div class="col m-5 p-5" id="designer">
+					<h1 id="header_designer" class="col navbar-brand text-center">Дизайнер</h1>
+					<p id="p_r" class="col text-center">Воплотил в жизнь более 70 обложек для муз. релизов</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">30 довольных клиентов</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Занимаюсь оформлением и дизайном сайтов, групп в VK, YouTube каналов</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Большинство работ выполнено в своём уникальном стиле</p>
+				</div>
+			</div>
+
+			<h1 id="header_projects" class="col navbar-brand text-center">Услуги</h1>
+
+			<div class="row container-fluid" id="blocks_net">
+				
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Оформления</h3>
+					<p class="text-center">Кроссплатформенные адаптивные оформления групп, каналов и т.п.</p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<h3 class="text-center">Обложки</h3>
+					<p class="text-center">Что ни работа, то произведение искусства</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Афиши, баннеры</h3>
+					<p class="text-center">Афиши и баннеры для ваших мероприятий</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row" id="head">
+				<div class="col m-5 p-5" id="sound">
+					<h1 id="header_sound" class="col m-5 p-5 navbar-brand text-center">Звукоинженер и муз. продюсер</h1>
+					<p id="p_r" class="col text-center">Занимаюсь сведением и мастерингом</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">На своём опыте "свёл"" и "отмастерил" более 200 инструменталов и песен</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Работаю в самым свежим софтом</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">При сведении каждого проекта, стараюсь добавить интересные приёмы</p>
+				</div>
+			</div>
+			
+			<h1 id="header_projects" class="col navbar-brand text-center">Услуги</h1>
+
+			<div class="row container-fluid" id="blocks_net">
+				
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Сведение и мастеринг битов</h3>
+					<p class="text-center">Приведу твои биты в порядок</p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<h3 class="text-center">Сведение вокала</h3>
+					<p class="text-center">Обработаю и заставлю твой голос звучать</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Мастеринг</h3>
+					<p class="text-center">Как бы круто не был сведён трек, мастеринг необходим</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row" id="head">
+				<div class="col m-5 p-5" id="video">
+					<h1 id="header_video" class="col m-5 p-5 navbar-brand text-center">Видеомонтажёр</h1>
+					<p id="p_r" class="col text-center">Опыт монтирования видео 5 лет</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">"Зарендерил" более 150 видеороликов</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Владею Adobe After Effects и Vegas Pro 9, 13, 14, 15 версий</p>
+					<hr id="hr">
+					<p id="p_r" class="col text-center">Специализируюсь на создании Instagram Stories</p>
+				</div>
+			</div>
+			
+			<h1 id="header_projects" class="col navbar-brand text-center">Услуги</h1>
+
+			<div class="row container-fluid" id="blocks_net">
+				
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Instagram Stories snippet</h3>
+					<p class="text-center">Сделаю отличную историю со сниппетом твоего трека </p>
+				</div>
+
+				<div class="col-md-3" id="div_block">
+					<h3 class="text-center">Цветокоррекция видео</h3>
+					<p class="text-center">Создание атмосферы, погружение зрителя</p>
+				</div>
+
+				<div class="col-md-4" id="div_block">
+					<h3 class="text-center">Монтаж видеороликов на YouTube</h3>
+					<p class="text-center">Обработаю видео- и аудиодорожки, будет конфетка!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 id="contacts" class="col navbar-brand">Контакты</h1>
+
+			<h1 id="contacts" class="col navbar-brand">Творчество</h1>
+
+			<h1 id="contacts" class="col navbar-brand">Партнёры</h1>
+		</div>
+
+		<div class="container-fluid" id="foot">
+			<div class="row">			
+				<div class="col-md-2" id="icon_block">
+					<a href="https://vk.com/nwfshop" target="_blank"><img id="icon" src="https://pngicon.ru/file/uploads/vk-256x256.png"></a>
+				</div>
+				<div class="col-md-2" id="contact_name">NWF SHOP</div>
+
+				<div class="col-md-2" id="icon_block_1">
+					<a href="https://vk.com/nwfshop" target="_blank"><img id="icon" src="https://img.icons8.com/fluent/452/spotify.png"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">NWF RUSYA</div>
+
+				<div class="col-md-2" id="icon_block_2">
+					<a href="https://vk.com/knowcmusic" target="_blank"><img id="icon" src="https://sun9-56.userapi.com/impg/mI94nw5u2g2feJEY3ef_phGM21KgtVd0hM6m1g/sKRtjq-jYc8.jpg?size=2160x2160&quality=96&sign=a9f6d7c432bd8799864d6ce3040ed177&type=album"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">KNOW+C MUSIC</div>
+
+			</div>
+			
+			<div class="row">
+				<div class="col-md-2">
+					<a href="https://www.instagram.com/nwf_rusya/" target="_blank"><img src="https://www.archa-zarplata.ru/instagram.png" id="icon"></a>
+				</div>
+				<div class="col-md-2" id="contact_name">@nwf_rusya</div>
+
+				<div class="col-md-2" id="icon_block_1">
+					<a href="https://www.youtube.com/channel/UCIwwTXlgTfBSrP95Xb6PZZA" target="_blank"><img id="icon" src="https://image.flaticon.com/icons/png/512/1384/1384060.png"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">NWF RUSYA</div>
+
+				<div class="col-md-2" id="icon_block_2">
+					<a href="https://cordobamusicgroup.ar/" target="_blank"><img id="icon" src="https://sun9-7.userapi.com/impg/1MnWUdRNJ73E39cw9H7vLKcYX1FFVIEOZWZlcA/ZZzjcOlX1Hk.jpg?size=1500x1500&quality=96&sign=6774b61d8718020958a83d42fc73eddf&type=album"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">Córdoba Music Group</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+					<img src="https://pngicon.ru/file/uploads/telegram-256x256.png" id="icon">
+				</div>
+				<div class="col-md-2" id="contact_name">@nwf_rusya</div>
+
+				<div class="col-md-2" id="icon_block_1">
+					<a href="https://music.apple.com/ru/artist/nwf-rusya/1529654317" target="_blank"><img id="icon" src="https://apple-resources.s3.amazonaws.com/medusa/production/images/5f600674c4f022000191d6c4/en-us-large@1x.png"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">NWF RUSYA</div>
+
+				<div class="col-md-2" id="icon_block_2">
+					<a href="https://vk.com/purplerecords256" target="_blank"><img id="icon" src="https://sun9-88.userapi.com/impf/c858416/v858416626/7a579/P1_sV3ROJ6Q.jpg?size=1500x1500&quality=96&sign=67e7ad0116c96ca9dacbf754f3dd7563&type=album"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">Instrumentals by 256</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+					<img src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png"id="icon">
+				</div>
+				<div class="col-md-2" id="contact_name">manfuckschool@mail.ru</div>
+
+				<div class="col-md-2" id="icon_block_1">
+					<a href="https://vk.com/nwf_rusya" target="_blank"><img id="icon" src="https://pngicon.ru/file/uploads/vk-256x256.png"></a>
+				</div>
+				<div class="col-md-2" id="link_to_music">NWF RUSYA</div>
+			</div>
+		</div>
+
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+
+
+	<script type="text/javascript">
+		function slowScroll(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top}, 1000);
+			return false
+		}
+
+		function slowScroll_coder(id) {
+			var offset = -50;
+			$('html, body').animate({
+				scrollTop: $(id).offset().top - offset}, 1000);
+			return false
+		}
+	</script>
+
+</body>
+</html>
